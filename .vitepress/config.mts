@@ -25,6 +25,16 @@ export default defineConfig({
       ],
     },
 
+    // outline
+    // outline: [2, 4], // 显示 2-4 级标题
+    outlineTitle: '目录',
+
+    // footer
+    docFooter: {
+      prev: '上一篇',
+      next: '下一篇',
+    },
+
     search: {
       provider: 'local'
     },
