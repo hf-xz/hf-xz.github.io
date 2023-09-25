@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import taskLists from 'markdown-it-task-lists';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -9,7 +10,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
-      { text: '例子', link: '/examples/markdown-examples' },
+      { text: 'Examples', link: '/examples/markdown-examples' },
     ],
 
     sidebar: {
@@ -33,8 +34,15 @@ export default defineConfig({
     ]
   },
 
-  srcExclude: [
-    'TODO.md',
-    'README.md',
-  ]
+  // srcExclude: [
+  //   'TODO.md',
+  //   'README.md',
+  // ],
+
+  markdown: {
+    config: (md) => {
+      // use more markdown-it plugins!
+      md.use(taskLists)
+    }
+  }
 })

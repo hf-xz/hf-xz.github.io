@@ -6,13 +6,13 @@ hero:
   name: "海风盒子"
   text: "HFXZ 的个人页面"
   tagline: 海风把记忆都封了盒📦
-  # actions:
-  #   - theme: brand
-  #     text: Markdown Examples
-  #     link: /examples/markdown-examples
-  #   - theme: alt
-  #     text: API Examples
-  #     link: /examples/api-examples
+  actions:
+    - theme: brand
+      text: README
+      link: /README
+    - theme: alt
+      text: TODO
+      link: /TODO
 
 features:
   - title: 博客
