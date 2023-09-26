@@ -49,6 +49,8 @@ export default defineConfig({
   //   'README.md',
   // ],
 
+  cleanUrls: true,
+
   markdown: {
     config: (md) => {
       // use more markdown-it plugins!

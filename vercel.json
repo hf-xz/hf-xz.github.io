@@ -1,0 +1,5 @@
+{
+  "buildCommand": "vitepress build",
+  "outputDirectory": ".vitepress/dist",
+  "cleanUrls": true
+}
