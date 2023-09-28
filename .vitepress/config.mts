@@ -10,6 +10,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
+      { text: '50 projects', link: '/articles/50projects50days/' },
       { text: 'Examples', link: '/examples/markdown-examples' },
     ],
 
@@ -23,6 +24,17 @@ export default defineConfig({
           ]
         }
       ],
+      // TODO: 根据目录结构自动生成 Sidebar
+      '/articles/50projects50days/': [
+        {
+          text: '50 projects 50 days',
+          link: '/articles/50projects50days/',
+          items: [
+            { text: 'day01-expanding-cards', link: '/articles/50projects50days/day01' },
+            { text: 'test', link: '/articles/50projects50days/test' },
+          ]
+        }
+      ]
     },
 
     // outline
