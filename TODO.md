@@ -10,4 +10,4 @@
   - [x] 买域名
   - [x] 解析到 vercel
 - [ ] Mongoose 连接数据库 MongoDB Atlas
-- [ ] 图床 要免费、稳定
+- [x] 腾讯云 COS 搭建图床 + picgo 上传，便宜、稳定
