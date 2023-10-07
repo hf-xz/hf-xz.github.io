@@ -1,9 +1,11 @@
 import { defineConfig } from 'vitepress'
-import taskLists from 'markdown-it-task-lists';
+import taskLists from 'markdown-it-task-lists'
+import { withMermaid } from 'vitepress-plugin-mermaid'
+
 import sidebar from './sidebar';
 
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
+let config = defineConfig({
   title: "海风盒子",
   description: "海风把记忆都封了盒",
 
@@ -49,5 +51,20 @@ export default defineConfig({
       // use more markdown-it plugins!
       md.use(taskLists)
     }
+  },
+  
+  // optionally, you can pass MermaidConfig
+  mermaid: {
+    // refer for options:
+    // https://mermaid.js.org/config/setup/modules/mermaidAPI.html#mermaidapi-configuration-defaults
+  },
+  // optionally set additional config for plugin itself with MermaidPluginConfig
+  mermaidPlugin: {
+    // set additional css class for mermaid container
+    class: "mermaid"
   }
 })
+
+config = withMermaid(config)
+
+export default config
