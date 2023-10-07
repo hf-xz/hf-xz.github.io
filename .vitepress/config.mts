@@ -20,7 +20,7 @@ export default defineConfig({
 
     // outline
     outline: [2, 4], // 显示 2-4 级标题
-    outlineTitle: '目录',
+    outlineTitle: '大纲',
 
     // footer
     docFooter: {
