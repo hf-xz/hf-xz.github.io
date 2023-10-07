@@ -159,6 +159,60 @@ title: 网站搭建
 
 ### Vitepress 集成 Giscus
 
+### Vitepress 集成 Mermaid
+
+使用现成插件 [vitepress-plugin-mermaid](https://emersonbottero.github.io/vitepress-plugin-mermaid/)。
+
+首先安装插件：
+
+```bash
+npm i vitepress-plugin-mermaid mermaid -D
+```
+
+然后编辑配置文件：
+
+```typescript{18}
+import { withMermaid } from 'vitepress-plugin-mermaid'
+
+let config = defineConfig({
+  ..., // 其他配置
+
+  // optionally, you can pass MermaidConfig
+  mermaid: {
+    // refer for options:
+    // https://mermaid.js.org/config/setup/modules/mermaidAPI.html#mermaidapi-configuration-defaults
+  },
+  // optionally set additional config for plugin itself with MermaidPluginConfig
+  mermaidPlugin: {
+    // set additional css class for mermaid container
+    class: "mermaid"
+  }
+}
+
+config = withMermaid(config)
+
+export default config
+```
+
+然后就可以像在 Typora 里写 mermaid 一样了。
+
+
+````markdown
+``` mermaid
+pie title Pets adopted by volunteers
+    "Dogs" : 386
+    "Cats" : 85
+    "Rats" : 15
+```
+````
+
+``` mermaid
+pie title Pets adopted by volunteers
+    "Dogs" : 386
+    "Cats" : 85
+    "Rats" : 15
+```
+
 ### 腾讯云 COS 图床 + PicGo 上传
 
 ::: warning
@@ -169,3 +223,79 @@ title: 网站搭建
 ### 自动生成 Sidebar
 
 有些文章集合需要一个 Sidebar 来当目录（比如[50个前端练手项目](/articles/50projects50days/)）。
+
+我通过一个 `generateSidebar` 函数来实现这个功能。原理图如下：
+
+```mermaid
+flowchart TD
+    start[generateSidebar]
+    res[当前目录的 Sidebar]
+    start --> B{遍历当前目录}
+    B -->|对于 .md 文件| C{Markdown}
+    B -->|对于子目录| D[递归子目录]
+    D -->|将子目录插入当前目录| res
+    C -->|是 index.md| E[index.md]
+    C -->|不是 index.md| F[others.md]
+    E -->|设置当前目录的标题和连接| res
+    F -->|将文章插入当前目录| res
+    res --> return[return Sidebar]
+```
+
+:::details 实现代码
+```typescript
+import { readdirSync, statSync } from 'fs'
+import { join, parse } from 'path'
+import matter from 'gray-matter'
+
+import { DefaultTheme } from 'vitepress'
+type SidebarItem = DefaultTheme.SidebarItem
+
+function generateSidebar(dir: string) {
+  // 初始化 SidebarItem
+  let sidebar: SidebarItem = {
+    base: `/${dir}/`,
+    // text 初始值为目录名
+    text: `${parse(dir).name}`,
+    items: []
+  }
+  // 遍历目录
+  let files = readdirSync(dir)
+  let subDirs: string[] = []
+  files.forEach((file) => {
+    let path = join(dir, file)
+    let stat = statSync(path)
+    if (stat.isDirectory()) {
+      // 稍后处理子文件夹
+      subDirs.push(file)
+    } else {
+      // 处理 md 文件
+      if (file.endsWith('.md')) {
+        let { data } = matter.read(path)
+        let { title } = data
+        if (!title) {
+          // frontmatter 中没有 title，就用文件名作为 title
+          title = file.replace(/\.md$/, '')
+        }
+        if (file == 'index.md') {
+          // 如果有 index 文件，就把它作为 Sidebar 的标题
+          sidebar['text'] = title
+          sidebar['link'] = file.replace(/\.md$/, '')
+          return
+        }
+        // 一般不是 index 的文件，就作为 Sidebar 的子项
+        let item: SidebarItem = {
+          text: title,
+          link: file.replace(/\.md$/, '')
+        }
+        sidebar.items!.push(item)
+      }
+    }
+  })
+  subDirs.forEach((subDir) => {
+    let subSidebar = generateSidebar(join(dir, subDir))
+    sidebar.items!.push(subSidebar)
+  })
+  return sidebar
+}
+```
+:::
