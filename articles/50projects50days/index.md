@@ -1,5 +1,8 @@
 ---
 title: 50个前端练手项目
+next:
+    text: 从这里开始
+    link: '/articles/50projects50days/day01.md'
 ---
 
 # 50个前端练手项目

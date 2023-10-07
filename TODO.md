@@ -11,7 +11,7 @@
   - [x] 解析到 vercel
 - [ ] Mongoose 连接数据库 MongoDB Atlas
 - [x] 腾讯云 COS 搭建图床 + picgo 上传，便宜、稳定
-- [ ] 自动生成 Sidebar
+- [x] 自动生成 Sidebar
 
 ## 文章
 

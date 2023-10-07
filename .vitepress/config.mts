@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import taskLists from 'markdown-it-task-lists';
+import sidebar from './sidebar';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -14,28 +15,8 @@ export default defineConfig({
       { text: 'Examples', link: '/examples/markdown-examples' },
     ],
 
-    sidebar: {
-      '/examples/': [
-        {
-          text: 'Examples',
-          items: [
-            { text: 'Markdown Examples', link: '/examples/markdown-examples' },
-            { text: 'Runtime API Examples', link: '/examples/api-examples' }
-          ]
-        }
-      ],
-      // TODO: 根据目录结构自动生成 Sidebar
-      '/articles/50projects50days/': [
-        {
-          text: '50 projects 50 days',
-          link: '/articles/50projects50days/',
-          items: [
-            { text: 'day01-expanding-cards', link: '/articles/50projects50days/day01' },
-            { text: 'test', link: '/articles/50projects50days/test' },
-          ]
-        }
-      ]
-    },
+    // import sidebar from './sidebar'
+    sidebar,
 
     // outline
     outline: [2, 4], // 显示 2-4 级标题

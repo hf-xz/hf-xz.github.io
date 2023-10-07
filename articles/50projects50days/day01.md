@@ -1,8 +1,8 @@
 ---
-title: day01-Expanding Cards
+title: Day01-Expanding Cards
 ---
 
-# day01-Expanding Cards
+# Day01-Expanding Cards
 
 - [Live Demo](https://50projects50days.com/projects/expanding-cards/)
 - [CodePen](https://codepen.io/hfxuanzai/pen/mdaKVgb)
