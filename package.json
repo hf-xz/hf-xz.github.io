@@ -11,6 +11,7 @@
     "docs:preview": "vitepress preview"
   },
   "dependencies": {
+    "@giscus/vue": "^2.3.0",
     "gray-matter": "^4.0.3",
     "markdown-it-task-lists": "^2.1.1",
     "mongoose": "^7.5.2"

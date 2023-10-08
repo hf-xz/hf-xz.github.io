@@ -1,10 +1,14 @@
+---
+comment: false
+---
+
 # Things todo
 
 代办清单
 
 ## 建站
 
-- [ ] giscus 评论区
+- [x] giscus 评论区
 - [x] 访问加速
   - [x] vercel 部署
   - [x] 买域名
@@ -15,4 +19,4 @@
 
 ## 文章
 
-- [ ] [网站搭建](/articles/initial.md)
+- [x] [网站搭建](/articles/initial/index.md)

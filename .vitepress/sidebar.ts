@@ -9,7 +9,8 @@ let sidebar = {
       ]
     }
   ],
-  '/articles/50projects50days/': [ generateSidebar('articles/50projects50days') ]
+  '/articles/50projects50days/': [ generateSidebar('articles/50projects50days') ],
+  '/articles/initial/': [ generateSidebar('articles/initial') ],
 }
 
 export default sidebar
