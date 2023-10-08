@@ -83,7 +83,7 @@ title: 搭建
         npm run docs:dev # 需要上面配置时选择创建 npm scripts
         ```
 
-3. 推送代码
+3. 提交代码
    
     项目创建完后第一件事当然是提交 initial commit 啦：
 
