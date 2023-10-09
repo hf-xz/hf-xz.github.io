@@ -170,7 +170,9 @@ flowchart TD
     :::tip
     这里在 ts 文件中 import 一个 vue 文件会报错，因为他们互不认识。
 
-    请在项目根目录创建 `global.d.ts` 文件并写入以下内容：
+    请新建如下两个文件：
+
+    `.vitepress/vue.d.ts`: 
 
     ```typescript
     declare module '*.vue' {
@@ -179,6 +181,19 @@ flowchart TD
       export default componentOptions
     }
     ```
+
+    `.vitepress/tsconfig.json`:
+
+    ```json
+    {
+      "include": [
+        "vue.d.ts",
+        "**/*.ts",
+      ]
+    }
+    ```
+
+    *我对这两个文件理解还不深，写的可能有问题，但这样确实解决了我的报错问题，如果有更好的写法请在评论区给我留言。*
     :::
 
 ## Vitepress 集成 Mermaid
