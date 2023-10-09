@@ -13,6 +13,7 @@ let config = defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
+      { text: '资源库', link: '/articles/library/' },
       { text: '50 projects', link: '/articles/50projects50days/' },
       { text: 'Examples', link: '/examples/markdown-examples' },
     ],

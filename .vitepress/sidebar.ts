@@ -11,6 +11,7 @@ let sidebar = {
   ],
   '/articles/50projects50days/': [ generateSidebar('articles/50projects50days') ],
   '/articles/initial/': [ generateSidebar('articles/initial') ],
+  '/articles/library/': [ generateSidebar('articles/library') ],
 }
 
 export default sidebar

@@ -15,10 +15,11 @@ hero:
       link: /TODO
 
 features:
-  - title: 博客
+  - title: 博客 - 施工中 🚧
     details: 记录日常，如生活感想、学习记录等。
-  - title: 资源库
+  - title: 资源库 📚
     details: 存储工作学习中遇到的有用的资源。
+    link: /articles/library/
   - title: 更多
     details: more...
 ---
