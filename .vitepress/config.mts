@@ -8,6 +8,13 @@ import sidebar from './sidebar';
 let config = defineConfig({
   title: "海风盒子",
   description: "海风把记忆都封了盒",
+  lang: "zh-CN",
+  head: [
+    ['link', {rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png'}],
+    ['link', {rel: 'icon', type: 'image/png', sizes:'32x32', href:'/favicon-32x32.png'}],
+    ['link', {rel: 'icon', type: 'image/png', sizes:'16x16', href:'/favicon-16x16.png'}],
+    ['link', {rel: "manifest", href: "/site.webmanifest"}],
+  ],
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config

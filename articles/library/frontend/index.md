@@ -21,12 +21,20 @@ next: false
 - [animate.css](https://animate.style/) 一个即用型跨浏览器 CSS 动画库，适合简单动画，一个 class 搞定
 - [animejs](https://animejs.com/) 一个轻量级的 JavaScript 动画库，功能强劲，适合复杂动画需求
 
-### 解决特定问题
+### 特定
+
+解决某些特定问题的库。
 
 - [dayjs](https://day.js.org/) 轻量级时间工具库
 - [qs](https://github.com/ljharb/qs#readme) (query string) URL 查询字符串与参数对象的互相转换
 - [js-cookie](https://github.com/js-cookie/js-cookie#readme) 用于处理 cookie 的简单、轻量级 JavaScript API
 - [chart.js](https://www.chartjs.org/docs/latest/) 简单而灵活的 JavaScript 图表库
+
+## 资源网站
+
+前端开发需要用到许多资源，图标、图片、配色等，这里简单收录一些我用过的资源网站。
+
+- [favicon.io](https://favicon.io/) 生成网站的 `favicon` ，支持 Image, Text, Emoji -> ico
 
 ## 练习资源
 
