@@ -15,6 +15,7 @@ next: false
 ### 通用
 
 - [lodash.js](https://lodash.com/) 一个一致性、模块化、高性能的 JavaScript 实用工具库，提供 **大量** **实用** 工具
+- [spacingjs](https://spacingjs.com/) 一个 JS 工具，用于测量元素的大小和间距等，实用的开发工具。
 
 ### 动画
 
@@ -35,6 +36,7 @@ next: false
 前端开发需要用到许多资源，图标、图片、配色等，这里简单收录一些我用过的资源网站。
 
 - [favicon.io](https://favicon.io/) 生成网站的 `favicon` ，支持 Image, Text, Emoji -> ico
+- [Lorem Picsum](https://picsum.photos/) 占位图片网站，支持随机图片、指定图片、指定大小
 
 ## 练习资源
 

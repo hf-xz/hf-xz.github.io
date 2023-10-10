@@ -26,7 +26,23 @@ next:
     练习合集：[CodePen Collection](https://codepen.io/collection/OLBMjP)
 
 - github.dev
-    
+
     > github.dev 编辑器引入了完全在浏览器中运行的轻量级编辑体验。
 
     通过在源码页面点击 `.` 键进入 github.dev，用这个基于 web 的编辑器来查看源码，可以同时查看 html + css + js，省去了来回切换的麻烦。
+
+- Lorem Picsum
+
+    占位图片网站，在练习过程中很多需要图片的地方可以用这个网站快捷的生成。例如：
+
+    ```
+    随机一个宽高为 200x300 的图片：
+    https://picsum.photos/200/300
+
+    指定 237 号图片，宽高为 200x300：
+    https://picsum.photos/id/237/200/300
+    ```
+
+- MDN - web docs
+
+	知名网站，练习过程中会频繁在这里查询各种语法。
