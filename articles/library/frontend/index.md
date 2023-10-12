@@ -15,6 +15,9 @@ next: false
 ### 通用
 
 - [lodash.js](https://lodash.com/) 一个一致性、模块化、高性能的 JavaScript 实用工具库，提供 **大量** **实用** 工具
+
+    *或者，使用原生代码实现 lodash 的方法：[You-Dont-Need-Lodash-Underscore](https://github.com/you-dont-need/You-Dont-Need-Lodash-Underscore)*
+
 - [spacingjs](https://spacingjs.com/) 一个 JS 工具，用于测量元素的大小和间距等，实用的开发工具。
 
 ### 动画
