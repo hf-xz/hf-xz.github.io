@@ -8,9 +8,9 @@ title: Day01-Expanding Cards
 - [CodePen](https://codepen.io/hfxuanzai/pen/mdaKVgb)
 - [Source Code](https://github.dev/bradtraversy/50projects50days/tree/master/expanding-cards)
 
-![Expanding Cards](https://image-1306852633.cos.ap-beijing.myqcloud.com/image-20231010115345836.png)
-
 ## 分析
+
+<IFrame src="https://50projects50days.com/projects/expanding-cards/" />
 
 几个卡片水平排列，其中只有一个卡片展开，其他卡片则折叠（宽度很窄）。
 

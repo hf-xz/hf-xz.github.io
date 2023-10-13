@@ -4,6 +4,7 @@ import Theme from 'vitepress/theme'
 import './style.css'
 
 import MyGiscus from './components/MyGiscus.vue'
+import IFrame from './components/IFrame.vue'
 
 export default {
   extends: Theme,
@@ -14,6 +15,7 @@ export default {
     })
   },
   enhanceApp({ app, router, siteData }) {
-    // ...
+    // register global components
+    app.component('IFrame', IFrame)
   }
 }
