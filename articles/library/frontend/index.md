@@ -25,6 +25,11 @@ next: false
 - [animate.css](https://animate.style/) 一个即用型跨浏览器 CSS 动画库，适合简单动画，一个 class 搞定
 - [animejs](https://animejs.com/) 一个轻量级的 JavaScript 动画库，功能强劲，适合复杂动画需求
 
+### 数据可视化
+
+- [chart.js](https://www.chartjs.org/) 适用于现代 Web 的简单而灵活的 JavaScript 图表库。轻量级、稳定、定制化成都高，适合大多数场景
+- [echarts](https://echarts.apache.org/zh/index.html) 一个基于 JavaScript 的开源可视化图表库。issue比较多，但是有中文文档而且有很多开箱即用的功能，适合不常见的图表
+
 ### 特定
 
 解决某些特定问题的库。
@@ -32,7 +37,6 @@ next: false
 - [dayjs](https://day.js.org/) 轻量级时间工具库
 - [qs](https://github.com/ljharb/qs#readme) (query string) URL 查询字符串与参数对象的互相转换
 - [js-cookie](https://github.com/js-cookie/js-cookie#readme) 用于处理 cookie 的简单、轻量级 JavaScript API
-- [chart.js](https://www.chartjs.org/docs/latest/) 简单而灵活的 JavaScript 图表库
 
 ## 资源网站
 
