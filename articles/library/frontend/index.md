@@ -44,6 +44,7 @@ next: false
 
 - [favicon.io](https://favicon.io/) 生成网站的 `favicon` ，支持 Image, Text, Emoji -> ico
 - [Lorem Picsum](https://picsum.photos/) 占位图片网站，支持随机图片、指定图片、指定大小
+- [Min-Max-Value Interpolation](https://min-max-calculator.9elements.com/) 用于计算 CSS 的 `clamp` 属性
 
 ## 练习资源
 
