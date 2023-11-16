@@ -24,6 +24,7 @@ next: false
 
 - [animate.css](https://animate.style/) 一个即用型跨浏览器 CSS 动画库，适合简单动画，一个 class 搞定
 - [animejs](https://animejs.com/) 一个轻量级的 JavaScript 动画库，功能强劲，适合复杂动画需求
+- [typed.js](https://mattboldt.github.io/typed.js/) 打字机动画
 
 ### 数据可视化
 
