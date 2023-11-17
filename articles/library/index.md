@@ -19,6 +19,7 @@ next: false
 
 - [后端资源库](./backend/)
 - [前端资源库](./frontend/)
+- [服务器资源库](./server/)
 
 ## 通用资源
 
