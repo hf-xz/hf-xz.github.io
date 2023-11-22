@@ -12,4 +12,5 @@ next: false
 
 - [nvim](./nvim.md)
 - [tmux](./tmux.md)
+- [zsh](./zsh.md)
 - 🚧 WIP 🚧

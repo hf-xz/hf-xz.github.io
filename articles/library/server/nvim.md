@@ -2,7 +2,7 @@
 
 ## 配置
 
-配置路径：`~/.config/nvim`
+配置路径：`~/.config/nvim/init.lua`
 
 配置：
 
@@ -46,4 +46,6 @@ map("n", "<leader>qq", "<cmd>q<cr>", { desc = "Quit" })
 -- scroll 9 lines
 map("n", "<C-u>", "9k", { desc = "Scroll up" })
 map("n", "<C-d>", "9j", { desc = "Scroll down" })
+-- toggle line number
+map("n", "<leader>l", "<cmd>set number!<CR>", { desc = "Toggle line number" })
 ```
