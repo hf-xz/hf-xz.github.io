@@ -12,13 +12,23 @@ next: false
 
 下列的工具库都可以在 [npm](https://www.npmjs.com/) 检索到。
 
-### 通用
+### 编码规范
+
+- [ESlint](https://eslint.org) 代码规范检查
+- [Prettier](https://prettier.io) 代码格式规范
+- [lint-staged](https://github.com/lint-staged/lint-staged) 仅对暂存的代码执行检查
+- [husky](https://typicode.github.io/husky/) git 钩子，与 lint-staged 组合使用
+
+### 工具
 
 - [lodash.js](https://lodash.com/) 一个一致性、模块化、高性能的 JavaScript 实用工具库，提供 **大量** **实用** 工具
 
-    *或者，使用原生代码实现 lodash 的方法：[You-Dont-Need-Lodash-Underscore](https://github.com/you-dont-need/You-Dont-Need-Lodash-Underscore)*
+  _或者，使用原生代码实现 lodash 的方法：[You-Dont-Need-Lodash-Underscore](https://github.com/you-dont-need/You-Dont-Need-Lodash-Underscore)_
 
 - [spacingjs](https://spacingjs.com/) 一个 JS 工具，用于测量元素的大小和间距等，实用的开发工具。
+- [dayjs](https://day.js.org/) 轻量级时间工具库
+- [qs](https://github.com/ljharb/qs#readme) (query string) URL 查询字符串与参数对象的互相转换
+- [js-cookie](https://github.com/js-cookie/js-cookie#readme) 用于处理 cookie 的简单、轻量级 JavaScript API
 
 ### 动画
 
@@ -29,15 +39,7 @@ next: false
 ### 数据可视化
 
 - [chart.js](https://www.chartjs.org/) 适用于现代 Web 的简单而灵活的 JavaScript 图表库。轻量级、稳定、定制化成都高，适合大多数场景
-- [echarts](https://echarts.apache.org/zh/index.html) 一个基于 JavaScript 的开源可视化图表库。issue比较多，但是有中文文档而且有很多开箱即用的功能，适合不常见的图表
-
-### 特定
-
-解决某些特定问题的库。
-
-- [dayjs](https://day.js.org/) 轻量级时间工具库
-- [qs](https://github.com/ljharb/qs#readme) (query string) URL 查询字符串与参数对象的互相转换
-- [js-cookie](https://github.com/js-cookie/js-cookie#readme) 用于处理 cookie 的简单、轻量级 JavaScript API
+- [echarts](https://echarts.apache.org/zh/index.html) 一个基于 JavaScript 的开源可视化图表库。issue 比较多，但是有中文文档而且有很多开箱即用的功能，适合不常见的图表
 
 ## 资源网站
 
@@ -49,4 +51,4 @@ next: false
 
 ## 练习资源
 
-- [50个前端练手项目](https://github.com/bradtraversy/50projects50days) 我的练习过程可以查看 [50projects](/articles/50projects50days/)
+- [50 个前端练手项目](https://github.com/bradtraversy/50projects50days) 我的练习过程可以查看 [50projects](/articles/50projects50days/)
