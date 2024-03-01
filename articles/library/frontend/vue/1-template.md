@@ -135,3 +135,4 @@ git commit -m 'test'
 - [自动引入](./2-autoimport.md)
 - [封装日志](./3-logger.md)
 - [封装 axios 请求](./4-axios.md)
+- [使用配置文件](./5-config.md)
