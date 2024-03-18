@@ -17,6 +17,7 @@ next:
 
 - [unplugin-auto-import](https://github.com/unplugin/unplugin-auto-import) 自动引入 vue，pinia 等库的 api 如 `ref`，`useRouter` 等。
 - [unplugin-vue-components](https://github.com/unplugin/unplugin-vue-components) 自动引入组件，包括项目内自己写的组件的和各类第三方组件库（如 Element Plus）。
+- [unplugin-icons](https://github.com/unplugin/unplugin-icons) 自动引入图标
 
 ## 其他推荐
 

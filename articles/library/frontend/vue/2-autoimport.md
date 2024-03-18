@@ -172,3 +172,56 @@ export default defineConfig({
 ```
 
 现在，你可以直接在页面中使用 Element Plus 中的组件而不需要引入了。
+
+## 自动引入图标
+
+1. 安装依赖 [unplugin-icons](https://github.com/unplugin/unplugin-icons)
+
+```zsh
+yarn add -D unplugin-icons
+```
+
+2. 安装图标数据
+
+手动安装：
+
+```zsh
+yarn add -D @iconify-json/mdi # 安装 Material Design Icons 图标数据
+```
+
+自动安装：
+
+```ts
+Icons({
+  // experimental
+  autoInstall: true,
+});
+```
+
+3. 配置 Vite
+
+```ts
+// vite.config.js
+import Vue from "@vitejs/plugin-vue";
+import Icons from "unplugin-icons/vite";
+import IconsResolver from "unplugin-icons/resolver";
+import Components from "unplugin-vue-components/vite";
+
+export default {
+  plugins: [
+    Vue(),
+    Components({
+      resolvers: [IconsResolver()],
+    }),
+    Icons(),
+  ],
+};
+```
+
+4. 验证
+
+在随意一个组件中插入下面的代码，应该就可以看到图标了
+
+```vue
+<i-mdi-heart />
+```
