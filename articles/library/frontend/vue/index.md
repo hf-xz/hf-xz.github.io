@@ -7,6 +7,8 @@ next:
 
 # Vue 3 资源库
 
+这里是编写此文时的[代码](https://github.com/hf-xz/vue-template)。
+
 ## Vue 3 全家桶
 
 - [Vite](https://cn.vitejs.dev) 构建工具
