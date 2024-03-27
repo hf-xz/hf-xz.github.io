@@ -134,5 +134,7 @@ git commit -m 'test'
 
 - [自动引入](./2-autoimport.md)
 - [封装日志](./3-logger.md)
-- [封装 axios 请求](./4-axios.md)
-- [使用配置文件](./5-config.md)
+- [使用 Vuetify 组件库](./4-vuetify.md)
+- [使用 Toast 库](./5-toastification.md)
+- [使用配置文件](./6-config.md)
+- [封装 axios 请求](./7-axios.md)
