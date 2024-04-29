@@ -27,6 +27,7 @@ next: false
 
 - [spacingjs](https://spacingjs.com/) 一个 JS 工具，用于测量元素的大小和间距等，实用的开发工具。
 - [dayjs](https://day.js.org/) 轻量级时间工具库
+- [sortablejs](https://sortablejs.github.io/Sortable/) 拖拽排序库
 - [qs](https://github.com/ljharb/qs#readme) (query string) URL 查询字符串与参数对象的互相转换
 - [js-cookie](https://github.com/js-cookie/js-cookie#readme) 用于处理 cookie 的简单、轻量级 JavaScript API
 
