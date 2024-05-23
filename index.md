@@ -5,7 +5,6 @@ layout: home
 hero:
   name: "海风盒子"
   text: "HFXZ 的个人页面"
-  tagline: 海风把记忆都封了盒📦
   actions:
     - theme: brand
       text: README
