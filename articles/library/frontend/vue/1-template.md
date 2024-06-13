@@ -101,7 +101,8 @@ yarn add -D lint-staged
 
 ```json
 {
-  "src/**/*.{js,ts,vue}": ["prettier --write", "eslint"]
+  "src/**/*.{js,ts,vue}": ["prettier --write", "eslint"],
+  "src/**/*.{css,scss,sass}": ["prettier --write"]
 }
 ```
 
