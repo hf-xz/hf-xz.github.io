@@ -45,11 +45,17 @@ function generateSidebar(dir: string) {
     } else {
       // 处理 md 文件
       if (file.endsWith('.md')) {
-        let { data } = matter.read(path)
-        let { title } = data
+        let { data, content } = matter.read(path);
+        let { title } = data;
         if (!title) {
-          // frontmatter 中没有 title，就用文件名作为 title
-          title = file.replace(/\.md$/, '')
+          const h1Match = content.match(/^#\s+(.*)/m);
+          if (h1Match) {
+            // 如果 frontmatter 中没有 title，就用 md 文件中的第一个 h1 作为 title
+            title = h1Match[1];
+          } else {
+            // fallback 用文件名作为 title
+            title = file.replace(/\.md$/, "");
+          }
         }
         if (file == 'index.md') {
           // 如果有 index 文件，就把它作为 Sidebar 的标题
