@@ -1,5 +1,5 @@
 ---
-title: LLM Application Development
+next: false
 comment: false
 ---
 
