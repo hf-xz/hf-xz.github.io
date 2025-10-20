@@ -25,26 +25,27 @@ import matter from 'gray-matter'
 import { DefaultTheme } from 'vitepress'
 type SidebarItem = DefaultTheme.SidebarItem
 
-function generateSidebar(dir: string) {
+function generateSidebar(dir: string, collapsed = false): SidebarItem {
   // 初始化 SidebarItem
   let sidebar: SidebarItem = {
     base: `/${dir}/`,
     // text 初始值为目录名
     text: `${parse(dir).name}`,
-    items: []
-  }
+    collapsed: collapsed,
+    items: [],
+  };
   // 遍历目录
-  let files = readdirSync(dir)
-  let subDirs: string[] = []
+  let files = readdirSync(dir);
+  let subDirs: string[] = [];
   files.forEach((file) => {
-    let path = join(dir, file)
-    let stat = statSync(path)
+    let path = join(dir, file);
+    let stat = statSync(path);
     if (stat.isDirectory()) {
       // 稍后处理子文件夹
-      subDirs.push(file)
+      subDirs.push(file);
     } else {
       // 处理 md 文件
-      if (file.endsWith('.md')) {
+      if (file.endsWith(".md")) {
         let { data, content } = matter.read(path);
         let { title } = data;
         if (!title) {
@@ -57,24 +58,24 @@ function generateSidebar(dir: string) {
             title = file.replace(/\.md$/, "");
           }
         }
-        if (file == 'index.md') {
+        if (file == "index.md") {
           // 如果有 index 文件，就把它作为 Sidebar 的标题
-          sidebar['text'] = title
-          sidebar['link'] = file.replace(/\.md$/, '')
-          return
+          sidebar["text"] = title;
+          sidebar["link"] = file.replace(/\.md$/, "");
+          return;
         }
         // 一般不是 index 的文件，就作为 Sidebar 的子项
         let item: SidebarItem = {
           text: title,
-          link: file.replace(/\.md$/, '')
-        }
-        sidebar.items!.push(item)
+          link: file.replace(/\.md$/, ""),
+        };
+        sidebar.items!.push(item);
       }
     }
-  })
+  });
   subDirs.forEach((subDir) => {
-    let subSidebar = generateSidebar(join(dir, subDir))
-    sidebar.items!.push(subSidebar)
-  })
-  return sidebar
+    let subSidebar = generateSidebar(join(dir, subDir), (collapsed = true));
+    sidebar.items!.push(subSidebar);
+  });
+  return sidebar;
 }
