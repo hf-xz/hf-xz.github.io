@@ -11,12 +11,6 @@ next: false
 
 包括但不限于各类工具、教程网站。
 
-## 分类资源
-
-- [后端资源库](./backend/)
-- [前端资源库](./frontend/)
-- [服务器资源库](./server/)
-
 ## 通用资源
 
 - 程序员速查表 https://quickref.cn/
