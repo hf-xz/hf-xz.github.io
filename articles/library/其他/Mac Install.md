@@ -57,6 +57,7 @@
 | im-select | vim 自动切换输入法 |
 | fzf       | 模糊搜索工具       |
 | ripgrep   | 文件搜索工具       |
+| fd        | 搜索工具           |
 | tmux      | 终端复用           |
 | git       | 代码版本管理       |
 | lazygit   | 懒的 git           |
