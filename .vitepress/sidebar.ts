@@ -15,6 +15,7 @@ let sidebar = {
   "/articles/initial/": [generateSidebar("articles/initial")],
   "/articles/library/": [generateSidebar("articles/library")],
   "/articles/llm/": [generateSidebar("articles/llm")],
+  "/articles/blog/": [generateSidebar("articles/blog")],
 };
 
 export default sidebar;

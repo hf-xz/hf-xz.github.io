@@ -14,6 +14,9 @@ hero:
       link: /TODO
 
 features:
+  - title: Blog
+    details: 博客
+    link: /articles/blog/
   - title: 大模型学习 🤖
     details: 大模型应用开发学习记录。
     link: /articles/llm/
