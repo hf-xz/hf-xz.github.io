@@ -51,22 +51,24 @@
 
 命令行软件：
 
-| 软件名    | 用途               |
-| --------- | ------------------ |
-| nvim      | neovim yes!        |
-| im-select | vim 自动切换输入法 |
-| fzf       | 模糊搜索工具       |
-| ripgrep   | 文件搜索工具       |
-| fd        | 搜索工具           |
-| tmux      | 终端复用           |
-| git       | 代码版本管理       |
-| lazygit   | 懒的 git           |
-| yazi      | 文件浏览器         |
-| antigen   | zsh 插件管理       |
-| nvm       | node 版本管理      |
-| yarn      | 前端依赖管理       |
-| jenv      | java 版本管理      |
-| uv        | python 管理        |
+| 软件名    | 用途                |
+| --------- | ------------------- |
+| nvim      | neovim yes!         |
+| im-select | vim 自动切换输入法  |
+| fzf       | 模糊搜索工具        |
+| ripgrep   | 文件搜索工具        |
+| fd        | 搜索工具            |
+| tmux      | 终端复用            |
+| git       | 代码版本管理        |
+| lazygit   | 懒的 git            |
+| yazi      | 文件浏览器          |
+| antigen   | zsh 插件管理        |
+| gum       | 更直观的 shell 脚本 |
+| glow      | 终端 Markdown 渲染  |
+| nvm       | node 版本管理       |
+| yarn      | 前端依赖管理        |
+| jenv      | java 版本管理       |
+| uv        | python 管理         |
 
 图形化软件：
 
