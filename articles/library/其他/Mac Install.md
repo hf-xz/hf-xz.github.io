@@ -53,6 +53,7 @@
 
 | 软件名    | 用途                |
 | --------- | ------------------- |
+| kanata    | 键盘映射软件        |
 | fish      | 跨平台终端，替代zsh |
 | starship  | 跨 shell prompt     |
 | nvim      | neovim yes!         |
