@@ -53,21 +53,22 @@
 
 | 软件名    | 用途                |
 | --------- | ------------------- |
+| fish      | 跨平台终端，替代zsh |
+| starship  | 跨 shell prompt     |
 | nvim      | neovim yes!         |
 | im-select | vim 自动切换输入法  |
+| ripgrep   | better grep         |
+| fd        | better find         |
+| zoxide    | better cd           |
 | fzf       | 模糊搜索工具        |
-| ripgrep   | 文件搜索工具        |
-| fd        | 搜索工具            |
 | tmux      | 终端复用            |
+| yazi      | 文件浏览器          |
 | git       | 代码版本管理        |
 | lazygit   | 懒的 git            |
-| yazi      | 文件浏览器          |
-| antigen   | zsh 插件管理        |
 | gum       | 更直观的 shell 脚本 |
 | glow      | 终端 Markdown 渲染  |
-| nvm       | node 版本管理       |
+| fvm       | node 版本管理       |
 | yarn      | 前端依赖管理        |
-| jenv      | java 版本管理       |
 | uv        | python 管理         |
 
 图形化软件：
@@ -80,7 +81,7 @@
 | swift-shift              | 快捷拖动窗口    |
 | arc                      | 浏览器          |
 | visual-studio-code       | 编辑器          |
-| iterm2                   | 终端            |
+| wezterm                  | 终端            |
 | orbstack                 | docker 界面     |
 | typora                   | markdown 编辑器 |
 | neovide                  | nvim 界面       |
