@@ -61,6 +61,7 @@
 | ripgrep   | better grep         |
 | fd        | better find         |
 | zoxide    | better cd           |
+| bat       | better cat          |
 | fzf       | 模糊搜索工具        |
 | tmux      | 终端复用            |
 | yazi      | 文件浏览器          |
