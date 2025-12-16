@@ -78,6 +78,7 @@ sudo launchctl load /Library/LaunchDaemons/com.example.kanata.plist
 sudo launchctl start com.example.kanata
 # 其他命令
 sudo launchctl stop    com.example.kanata # 停止
+sudo launchctl restart com.example.kanata # 重启
 sudo launchctl print   system/com.example.kanata # 查看状态
 sudo launchctl enable  system/com.example.kanata # 启用（开机启动）
 sudo launchctl disable system/com.example.kanata # 禁用
