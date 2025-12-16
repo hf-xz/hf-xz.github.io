@@ -53,7 +53,6 @@
 
 | 软件名    | 用途                |
 | --------- | ------------------- |
-| kanata    | 键盘自定义          |
 | fish      | 跨平台终端，替代zsh |
 | starship  | 跨 shell prompt     |
 | nvim      | neovim yes!         |
@@ -77,7 +76,6 @@
 
 | 软件名                   | 用途            |
 | ------------------------ | --------------- |
-| karabiner-elements       | 键盘驱动        |
 | font-maple-mono-nf-cn    | MapleMono 字体  |
 | font-fira-code-nerd-font | FiraCode 字体   |
 | raycast                  | 聚焦替代        |
