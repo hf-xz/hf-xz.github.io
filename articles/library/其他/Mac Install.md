@@ -76,6 +76,7 @@
 
 | 软件名                   | 用途            |
 | ------------------------ | --------------- |
+| karabiner-elements       | 自定义键盘映射  |
 | font-maple-mono-nf-cn    | MapleMono 字体  |
 | font-fira-code-nerd-font | FiraCode 字体   |
 | raycast                  | 聚焦替代        |
