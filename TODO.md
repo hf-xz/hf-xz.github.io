@@ -8,7 +8,6 @@ comment: false
 
 ## 建站
 
-- [x] giscus 评论区
 - [x] 访问加速
   - [x] vercel 部署
   - [x] 买域名
