@@ -1,14 +1,14 @@
 // 根据目录结构自动生成 Sidebar
 import { readdirSync, statSync } from "fs";
 import { join, parse } from "path";
-import matter from "gray-matter";
+import * as matter from "gray-matter";
 
 import { DefaultTheme } from "vitepress";
 type SidebarItem = DefaultTheme.SidebarItem;
 
 export default function generateSidebar(
   dir: string,
-  collapsed = false
+  collapsed = false,
 ): SidebarItem {
   // 初始化 SidebarItem
   let sidebar: SidebarItem = {
