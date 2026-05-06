@@ -1,7 +1,7 @@
 // https://vitepress.dev/guide/custom-theme
-import { h } from 'vue'
-import Theme from 'vitepress/theme'
-import './style.css'
+import { h } from "vue";
+import Theme from "vitepress/theme";
+import "./style.css";
 
 import Footer from "./components/Footer.vue";
 import MyGiscus from "./components/MyGiscus.vue";
@@ -12,12 +12,12 @@ export default {
   Layout: () => {
     return h(Theme.Layout, null, {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
-      'doc-after': () => h(MyGiscus)
+      "doc-after": () => h(MyGiscus),
       "layout-bottom": () => h(Footer),
     });
   },
   enhanceApp({ app, router, siteData }) {
     // register global components
-    app.component('IFrame', IFrame)
-  }
-}
+    app.component("IFrame", IFrame);
+  },
+};
